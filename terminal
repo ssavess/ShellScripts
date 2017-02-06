@@ -1,0 +1,30 @@
+#.bashrc
+
+#Functions implemented in the root of bash.
+
+fcul() {
+    gnome-terminal -e 'sshpass -p "zjjq772w1988" ssh fc42484@gcc.alunos.di.fc.ul.pt '
+    
+}
+
+poweroff() {
+    echo "user" | sudo -S poweroff ; 
+}
+
+reboot() {
+    echo "user" | sudo -S reboot ;  
+}
+
+update() {
+    echo "user" | sudo -S apt-get update ;
+}
+
+upgrade() {
+    echo "user" | sudo -S apt-get upgrade ;
+}
+
+ro(){
+    echo "user" | sudo -S echo
+	sudo su
+}
+
